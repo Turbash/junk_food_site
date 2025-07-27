@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junk Food</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Baloo 2', cursive, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+    <nav class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto px-8 md:px-12 lg:px-16 xl:px-24 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-bold text-green-600">Junk Food</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-green-600">Home</a>
+                <a href="#blog" class="hover:text-green-600">Blog</a>
+                <a href="#faq" class="hover:text-green-600">FAQ</a>
+                <a href="#testimonials" class="hover:text-green-600">Testimonials</a>
+                <a href="#contact" class="hover:text-green-600">Contact</a>
+            </div>
+            <button id="sidebarToggle" class="md:hidden text-2xl focus:outline-none">
+                &#9776;
+            </button>
+        </div>
+    </nav>
+
+    <div id="sidebar"
+        class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-200 ease-in-out z-40 md:hidden">
+        <div class="flex flex-col h-full p-6 space-y-4">
+            <button id="closeSidebar" class="self-end text-2xl">&times;</button>
+            <a href="#home" class="py-2 hover:text-green-600">Home</a>
+            <a href="#blog" class="py-2 hover:text-green-600">Blog</a>
+            <a href="#faq" class="py-2 hover:text-green-600">FAQ</a>
+            <a href="#testimonials" class="py-2 hover:text-green-600">Testimonials</a>
+            <a href="#contact" class="py-2 hover:text-green-600">Contact</a>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+        <main class="flex-1 space-y-12 px-3 md:px-6 lg:px-12 xl:px-16">
+            <section id="home" class="bg-green-100 rounded-lg p-8 flex flex-col items-center text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-2">Namaste 🙏</h1>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Welcome to Junk Food!</h2>
+                <p class="text-lg md:text-xl mb-6">Craving something delicious? Here are my absolute favourite Indian street foods—perfect for cheat days, celebrations, or just because you love good food!</p>
+                <a href="#blog"
+                    class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition">See
+                    the Dishes</a>
+            </section>
+
+            <section id="blog">
+                <h2 class="text-2xl font-bold mb-6">My Favourite Indian Street Foods 🍽️</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow overflow-hidden group flex flex-col">
+                        <img src="gol.jpg" alt="Golgappe"
+                            class="mb-4 h-40 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">Golgappe</h3>
+                            <p class="flex-1 mb-4">Crispy, tangy, and spicy—Golgappe (Pani Puri) are the ultimate street snack. Bet you can’t eat just one!</p>
+                            <span class="text-green-600 font-semibold">Street Food Superstar</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow overflow-hidden group flex flex-col">
+                        <img src="chole-bhature.jpg" alt="Chole Bhature"
+                            class="mb-4 h-40 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">Chole Bhature</h3>
+                            <p class="flex-1 mb-4">Spicy chickpeas with fluffy, fried bread—Chole Bhature is the ultimate comfort food for any time of day.</p>
+                            <span class="text-green-600 font-semibold">North Indian Favorite</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow overflow-hidden group flex flex-col">
+                        <img src="allo-tikki.webp" alt="Aloo Tikki"
+                            class="mb-4 h-40 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">Aloo Tikki</h3>
+                            <p class="flex-1 mb-4">Golden, crispy potato patties served hot with chutneys—Aloo Tikki is pure street food magic!</p>
+                            <span class="text-green-600 font-semibold">Crispy & Spicy Treat</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow overflow-hidden group flex flex-col">
+                        <img src="jalebi.jpg" alt="Jalebi"
+                            class="mb-4 h-40 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">Jalebi</h3>
+                            <p class="flex-1 mb-4">Sweet, sticky, and crispy—Jalebi is a classic Indian dessert that melts in your mouth and leaves you wanting more!</p>
+                            <span class="text-green-600 font-semibold">Sweet Spiral Delight</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow overflow-hidden group flex flex-col">
+                        <img src="milk-powder-gulab-jamuns.jpg" alt="Gulab Jamun"
+                            class="mb-4 h-40 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">Gulab Jamun</h3>
+                            <p class="flex-1 mb-4">Soft, syrupy, and utterly delicious—Gulab Jamun is the king of Indian sweets, perfect for every celebration.</p>
+                            <span class="text-green-600 font-semibold">Syrupy Sweetness</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow overflow-hidden group flex flex-col">
+                        <img src="samosa.webp" alt="Samosa"
+                            class="mb-4 h-40 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">Samosa</h3>
+                            <p class="flex-1 mb-4">Crispy pastry filled with spicy potatoes and peas—Samosa is the ultimate tea-time snack and street food favorite.</p>
+                            <span class="text-green-600 font-semibold">Iconic Snack</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq" class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-2xl font-bold mb-6">FAQ (aka Stuff People Ask Me)</h2>
+                <div class="space-y-4">
+                    <div class="border-b pb-2">
+                        <button class="w-full text-left font-semibold flex justify-between items-center faq-toggle">
+                            <span>Is Indian junk food really unhygienic?</span>
+                            <span class="text-xl">+</span>
+                        </button>
+                        <div class="faq-content hidden mt-2 text-gray-700">Not at all! There are some places where hygiene is not followed, but you can easily avoid those. If you eat these at restaurants, it is very hygienic.</div>
+                    </div>
+                    <div class="border-b pb-2">
+                        <button class="w-full text-left font-semibold flex justify-between items-center faq-toggle">
+                            <span>What is your favourite?</span>
+                            <span class="text-xl">+</span>
+                        </button>
+                        <div class="faq-content hidden mt-2 text-gray-700">Gulab Jamun for sure! I lllllove it, it is the best sweet food in the world.</div>
+                    </div>
+                    <div class="border-b pb-2">
+                        <button class="w-full text-left font-semibold flex justify-between items-center faq-toggle">
+                            <span>What is the best junk food for you after India?</span>
+                            <span class="text-xl">+</span>
+                        </button>
+                        <div class="faq-content hidden mt-2 text-gray-700">Chinese for sure, but the Indian version of it! Not authentic Chinese—we Indians like spicy, and Chinese food in itself is not spicy, but the Indian version is the perfect blend.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials">
+                <h2 class="text-2xl font-bold mb-6">What My Friends Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-green-50 rounded-lg p-6 shadow">
+                        <p class="mb-2">“I tried Golgappe and I loved it! My family enjoyed it too. Keep posting more, please!”
+                        </p>
+                        <span class="font-semibold">- Aryan(my classmate)</span>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-6 shadow">
+                        <p class="mb-2">“Indian junk food blog is awesome! I never knew there were so many tasty options.”</p>
+                        <span class="font-semibold">- John(a foreigner)</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-2xl font-bold mb-6">Say Hi or Share Your Favorite Junk Food!</h2>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block mb-1 font-semibold">Your Name</label>
+                        <input type="text" class="w-full border rounded px-3 py-2" required
+                            placeholder="e.g. Sameer or Priya" />
+                    </div>
+                    <div>
+                        <label class="block mb-1 font-semibold">Email (so I can reply!)</label>
+                        <input type="email" class="w-full border rounded px-3 py-2" required
+                            placeholder="you@email.com" />
+                    </div>
+                    <div>
+                        <label class="block mb-1 font-semibold">Message or Favorite Junk Foods</label>
+                        <textarea class="w-full border rounded px-3 py-2" rows="4" required
+                            placeholder="Type your message or favorite junk foods here..."></textarea>
+                    </div>
+
+
+                    <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Send
+                        it!</button>
+                </form>
+                <p class="text-sm text-gray-500 mt-2">It is just the ui mails don't get send . Thanks for
+                    stopping by!</p>
+            </section>
+        </main>
+    </div>
+
+    <footer class="bg-white border-t mt-12">
+        <div class="container mx-auto px-8 md:px-12 lg:px-16 xl:px-24 py-6 flex flex-col md:flex-row items-center justify-between">
+            <span class="text-gray-600">&copy; 2025 Junk Food. Made with ❤️.</span>
+            <div class="flex space-x-4 mt-2 md:mt-0">
+                <a href="#" class="hover:text-green-600">Instagram</a>
+                <a href="#" class="hover:text-green-600">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const closeSidebar = document.getElementById('closeSidebar');
+        const sidebarLinks = sidebar.querySelectorAll('a');
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('-translate-x-full');
+        });
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sidebar.classList.add('-translate-x-full');
+            });
+        });
+        document.querySelectorAll('.faq-toggle').forEach(faqButton => {
+            faqButton.addEventListener('click', function () {
+                const answer = this.nextElementSibling;
+                answer.classList.toggle('hidden');
+                const icon = this.querySelector('span:last-child');
+                icon.textContent = answer.classList.contains('hidden') ? '+' : '-';
+            });
+        });
+    </script>
+</body>
+</html>
